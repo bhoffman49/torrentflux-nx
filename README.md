@@ -6,6 +6,8 @@ TorrentFlux 2.4 for PHP 8, SQLite and Transmission.
 > TorrentFlux NX is a modern rebuild of the original **TorrentFlux 2.4** (2008).
 > It is not related to the TorrentFlux-b4rt or TorrentFlux-NG forks.
 
+![TorrentFlux NX - main page, sage theme](docs/screenshots/sage-main.png)
+
 > [!IMPORTANT]
 > **Disclaimer.** TorrentFlux NX is provided as is, without warranty, and **without technical support**.
 > You alone are responsible for what you download and share, and for securing your server.
@@ -25,6 +27,18 @@ TorrentFlux 2.4 for PHP 8, SQLite and Transmission.
 - Works on phones and tablets.
 
 See [CHANGELOG.md](CHANGELOG.md) for everything that is new compared with TorrentFlux 2.4.
+
+### Themes
+
+| sage (default) | clay | walnut |
+|---|---|---|
+| ![sage](docs/screenshots/sage-main.png) | ![clay](docs/screenshots/clay-main.png) | ![walnut](docs/screenshots/walnut-main.png) |
+| **workshop** | **network** | **mint** |
+| ![workshop](docs/screenshots/workshop-main.png) | ![network](docs/screenshots/network-main.png) | ![mint](docs/screenshots/mint-main.png) |
+
+The directory browser, with the chunked uploader (clay theme):
+
+![Directory list - clay theme](docs/screenshots/clay-directory.png)
 
 ## Requirements
 

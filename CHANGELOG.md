@@ -7,7 +7,7 @@ TorrentFlux NX is a modern rebuild of **TorrentFlux 2.4** (2008, by Qrome and co
 It is not related to the TorrentFlux-b4rt or TorrentFlux-NG forks.
 The original 2.x history is kept in [CHANGELOG-2.4.txt](CHANGELOG-2.4.txt).
 
-## [1.0.0] — unreleased
+## [1.0.0] — 2026-10-28
 
 Everything below is new or changed compared with TorrentFlux 2.4.
 
