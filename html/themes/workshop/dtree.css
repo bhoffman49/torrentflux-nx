@@ -1,0 +1,35 @@
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Copyright (c) 2002-2003 Geir Landrö               |
+|--------------------------------------------------*/
+/* workshop theme colours (torrent details file tree) */
+
+.dtree {
+	font-family: Barlow, "Helvetica Neue", Arial, sans-serif;
+	font-size: 13px;
+	color: #6b6b6b;
+	white-space: nowrap;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #333333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #c4520a;
+	text-decoration: underline;
+}
+.dtree a.nodeSel {
+	background-color: #fde3d0;
+}
+.dtree .clip {
+	overflow: hidden;
+}

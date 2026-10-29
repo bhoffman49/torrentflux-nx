@@ -1,0 +1,22 @@
+# This server's own files - never commit them
+/state/*
+!/state/.htaccess
+/data/*
+!/data/.htaccess
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+config.local.php
+install.lock
+
+# Leftovers
+*.bak
+*.bak-*
+*.orig
+*.tmp
+*.tfpart
+html.previous/
+/dist/
+.DS_Store
+Thumbs.db

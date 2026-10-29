@@ -1,0 +1,250 @@
+/* TorrentFlux "walnut" theme - warm charcoal with light bronze accents, thin wide-spaced
+   headings and bronze line icons (calm, architectural look) */
+/* palette: page #1e1c1b  panel #2a2725  panel-alt #2f2c29  head #24211f  line #3a3633  input-line #4a4541
+            text #e8e2d9  soft #d9d2c7  muted #9a928a
+            bronze #c9a46b  bronze-light #e2c48f  bronze-dark #a8854f
+            green #8fae7a  red #c97a64  amber #d8b56a */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&display=swap');
+
+BODY		{FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: 300; COLOR: #e8e2d9; BACKGROUND-COLOR: #1e1c1b}
+FONT		{FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-SIZE: 14px}
+TD		{FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: 300; COLOR: #d9d2c7}
+P		{FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-SIZE: 14px}
+DIV		{FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-SIZE: 14px}
+FORM		{FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-SIZE: 14px}
+
+INPUT, TEXTAREA, SELECT	{FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: 300; COLOR: #e8e2d9; BACKGROUND-COLOR: #1e1c1b; BORDER: 1px solid #4a4541; BORDER-RADIUS: 4px; PADDING: 5px 9px}
+INPUT:focus, TEXTAREA:focus, SELECT:focus	{BORDER-COLOR: #c9a46b; OUTLINE: none}
+INPUT[type=submit], INPUT[type=button], BUTTON	{BACKGROUND-COLOR: #c9a46b; COLOR: #1e1c1b; BORDER: 0; BORDER-RADIUS: 999px; PADDING: 6px 18px; FONT-FAMILY: Outfit, "Helvetica Neue", Arial, sans-serif; FONT-SIZE: 13px; FONT-WEIGHT: 600; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 1.5px; CURSOR: pointer}
+INPUT[type=submit]:hover, INPUT[type=button]:hover, BUTTON:hover	{BACKGROUND-COLOR: #e2c48f}
+INPUT[type=submit]:disabled, INPUT[type=button]:disabled	{BACKGROUND-COLOR: #4a4541; COLOR: #9a928a; CURSOR: default}
+
+A:link          {BACKGROUND: none; COLOR: #c9a46b; FONT-SIZE: 14px; FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; TEXT-DECORATION: none}
+A:visited       {BACKGROUND: none; COLOR: #c9a46b; FONT-SIZE: 14px; FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; TEXT-DECORATION: none}
+A:active        {BACKGROUND: none; COLOR: #e2c48f; FONT-SIZE: 14px; FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; TEXT-DECORATION: none}
+A:hover         {BACKGROUND: none; COLOR: #e2c48f; FONT-SIZE: 14px; FONT-FAMILY: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; TEXT-DECORATION: none}
+
+.titleblack	{BACKGROUND: none; COLOR: #e8e2d9; FONT-SIZE: 18px; FONT-WEIGHT: 300; FONT-FAMILY: Outfit, "Helvetica Neue", Arial, sans-serif; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 3px; TEXT-DECORATION: none}
+.title		{FONT-FAMILY: Outfit, "Helvetica Neue", Arial, sans-serif; FONT-WEIGHT: 300; COLOR: #e8e2d9; FONT-SIZE: 15px; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 2.5px}
+.block-title	{BACKGROUND: none; COLOR: #e8e2d9; FONT-SIZE: 15px; FONT-WEIGHT: 300; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 2.5px}
+.content	{BACKGROUND: none; COLOR: #c97a64; FONT-SIZE: 14px}
+.storytitle	{BACKGROUND: none; COLOR: #e8e2d9; FONT-SIZE: 14px; FONT-WEIGHT: 400; TEXT-DECORATION: none}
+.storycat	{BACKGROUND: none; COLOR: #e8e2d9; FONT-SIZE: 14px; FONT-WEIGHT: 400; TEXT-DECORATION: underline}
+.boxtitle	{BACKGROUND: none; COLOR: #e8e2d9; FONT-SIZE: 15px; FONT-WEIGHT: 300; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 2.5px; TEXT-DECORATION: none}
+.boxcontent	{BACKGROUND: none; COLOR: #d9d2c7; FONT-SIZE: 14px}
+.option		{BACKGROUND: none; COLOR: #e8e2d9; FONT-SIZE: 14px; FONT-WEIGHT: 400; TEXT-DECORATION: none}
+.adminlink	{BACKGROUND: none; COLOR: #c9a46b; FONT-SIZE: 14px; TEXT-DECORATION: none}
+
+.tiny		{BACKGROUND: none; COLOR: #9a928a; FONT-SIZE: 12px; FONT-WEIGHT: 300; TEXT-DECORATION: none}
+.tinywhite	{BACKGROUND: none; COLOR: #9a928a; FONT-SIZE: 12px; FONT-WEIGHT: 300; TEXT-DECORATION: none}
+.tinyunderline	{BACKGROUND: none; COLOR: #9a928a; FONT-SIZE: 12px; FONT-WEIGHT: 300; TEXT-DECORATION: underline}
+.tinypercent	{BACKGROUND: none; COLOR: #9a928a; FONT-SIZE: 12px; FONT-WEIGHT: 300; TEXT-DECORATION: none}
+
+/* progress bar: .bg = empty track, .fg = filled part */
+.bg { border: 0px; background-color: #3a3633; }
+.fg { border: 0px; background-color: #c9a46b; }
+
+/* section heads: the old bar.gif title bars become quiet dark bands with a thin bronze rule */
+TD[background*="bar.gif"]	{BACKGROUND: #24211f; BORDER-BOTTOM: 1px solid #c9a46b; PADDING: 9px 12px}
+TD[background*="bar.gif"] *	{COLOR: #e8e2d9}
+TABLE[bordercolor]		{BORDER-COLOR: #3a3633}
+HR				{BORDER: 0; BORDER-TOP: 1px solid #3a3633}
+
+/* table column headings (User, Hits, File ...): small spaced uppercase in muted taupe */
+TD:not([background]):has(> DIV.title)	{BACKGROUND-COLOR: #24211f; BORDER-BOTTOM: 1px solid #3a3633}
+TD:not([background]) > DIV.title	{COLOR: #9a928a; FONT-SIZE: 12px; FONT-WEIGHT: 400; LETTER-SPACING: 2px}
+
+/* page header (DisplayHead and index.php): page-coloured band, wide thin wordmark, bronze rule */
+BODY > DIV[align=center] > TABLE[border="0"][cellpadding="0"][cellspacing="0"] > TBODY > TR:first-child > TD > TABLE > TBODY > TR:first-child > TD[background*="bar.gif"],
+BODY > TABLE TD[colspan="2"][background*="bar.gif"]	{BACKGROUND: #1e1c1b; BORDER-BOTTOM: 1px solid #c9a46b; PADDING: 14px 14px}
+BODY > DIV[align=center] > TABLE[border="0"][cellpadding="0"][cellspacing="0"] > TBODY > TR:first-child > TD > TABLE > TBODY > TR:first-child > TD[background*="bar.gif"] .title,
+BODY > TABLE TD[colspan="2"][background*="bar.gif"] .title	{FONT-SIZE: 16px; FONT-WEIGHT: 200; LETTER-SPACING: 2px}
+
+/* admin sub-menu (admin | settings | queue ...): dark band, soft links, bronze on hover */
+TD[background*="bar.gif"]:has(> DIV > A > FONT.adminlink)	{BACKGROUND: #24211f; BORDER-BOTTOM: 1px solid #3a3633; COLOR: #5a544e}
+TD[background*="bar.gif"] > DIV > A > FONT.adminlink	{COLOR: #d9d2c7; LETTER-SPACING: .5px}
+TD[background*="bar.gif"] > DIV > A:hover > FONT.adminlink	{COLOR: #c9a46b}
+
+/* storage / user-quota / download-details bars: proglass.gif = filled, noglass.gif = empty */
+TD[background*="proglass.gif"]	{BACKGROUND: #c9a46b}
+TD[background*="noglass.gif"]	{BACKGROUND: #3a3633}
+TD[background*="proglass.gif"] .tinypercent	{COLOR: #1e1c1b; FONT-WEIGHT: 600}
+/* per-torrent progress in the list */
+TD[background*="progressbar.gif"]	{BACKGROUND: #c9a46b}
+TD[background*="progressbar.gif"] + TD	{BACKGROUND: #3a3633}
+
+/* login page (login.php) */
+FORM[name=theForm] INPUT[type=text], FORM[name=theForm] INPUT[type=password]	{WIDTH: 210px}
+FORM[name=theForm] INPUT[type=submit]	{WIDTH: 100%; PADDING: 9px 18px}
+FORM[name=theForm] TD		{COLOR: #9a928a}
+BODY > DIV[align=center] > TABLE[border="1"]:has(FORM[name=theForm])	{MARGIN-TOP: 10vh; BORDER-COLOR: #3a3633; BORDER-RADIUS: 6px; OVERFLOW: hidden; BOX-SHADOW: 0 12px 40px rgba(0,0,0,.45)}
+BODY > DIV[align=center] > TABLE[border="1"]:has(FORM[name=theForm]) TD[background*="bar.gif"]	{BACKGROUND: #24211f; PADDING: 14px 16px}
+
+/* page width: same centred 1100px column on every page */
+BODY > DIV[align=center] > TABLE[border="0"][cellpadding="0"][cellspacing="0"]	{WIDTH: 100%; MAX-WIDTH: 1100px}
+BODY > DIV[align=center] > TABLE[border="0"][cellpadding="0"][cellspacing="0"] > TBODY > TR > TD > TABLE	{WIDTH: 100%}
+TABLE[width="760"], TABLE[width="740"]	{WIDTH: 100%}
+/* activity log File column: magnet links and long names have no spaces - let them wrap */
+DIV[align=center] > DIV.tiny[align=left]	{OVERFLOW-WRAP: anywhere}
+
+/* theme colours used by the PHP */
+A.tf-nav, A.tf-nav:link, A.tf-nav:visited	{COLOR: #d9d2c7; FONT-FAMILY: Outfit, "Helvetica Neue", Arial, sans-serif; FONT-SIZE: 14px; FONT-WEIGHT: 400; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 1px; TEXT-DECORATION: none; PADDING: 0 6px}
+A.tf-nav:hover			{COLOR: #c9a46b}
+.tf-error			{COLOR: #c97a64}
+.tf-errorlist			{FONT-SIZE: 12px}
+.tf-success			{COLOR: #8fae7a}
+.tf-new				{COLOR: #8fae7a}
+.tf-queued			{COLOR: #d8b56a}
+.tf-incomplete			{COLOR: #9a928a}
+.tf-close			{COLOR: #e8e2d9}
+TABLE.tf-messages		{BACKGROUND-COLOR: #3a2a24; BORDER-COLOR: #c97a64; BORDER-RADIUS: 6px; MARGIN: 8px auto}
+
+/* icons inside text links (RSS Torrents, Drive Space, Directory List ...): a little room before the words */
+A > IMG[align="absmiddle" i], A > IMG[align="bottom" i]	{MARGIN-RIGHT: 6px}
+
+/* action icons on every page (torrent list, directory, admin, messages): all 24px like the zip icon, spaced
+   apart for touch screens; the files are drawn at 48px so they stay sharp on high-resolution screens */
+IMG[src$="/properties.png"],
+IMG[src$="/kill.gif"],
+IMG[src$="/run_on.gif"],
+IMG[src$="/run_off.gif"],
+IMG[src$="/seed_on.gif"],
+IMG[src$="/queued.gif"],
+IMG[src$="/edit.png"],
+IMG[src$="/delete.png"],
+IMG[src$="/delete_on.gif"],
+IMG[src$="/delete_off.gif"],
+IMG[src$="/reply.gif"],
+IMG[src$="/old_message.gif"],
+IMG[src$="/new_message.gif"],
+IMG[src$="/uparrow.png"],
+IMG[src$="/downarrow.png"],
+IMG[src$="/make.gif"],
+IMG[src$="/download_owner.gif"],
+IMG[src$="/view_nfo.gif"],
+IMG[src$="/tar_down.png"]	{WIDTH: 24px; HEIGHT: 24px; MARGIN: 2px 2px; VERTICAL-ALIGN: middle}
+IMG[src$="/down.gif"]	{WIDTH: 24px; HEIGHT: 24px; MARGIN: 2px 8px 2px 2px; VERTICAL-ALIGN: middle}
+/* status dots: drawn at 48px, so give them their old 16px everywhere (some pages set no size), 24px in the torrent list */
+IMG[src$="/green.gif"], IMG[src$="/red.gif"], IMG[src$="/yellow.gif"], IMG[src$="/black.gif"]	{WIDTH: 16px; HEIGHT: 16px}
+TD.tiny > IMG[src$="/green.gif"], TD.tiny > IMG[src$="/red.gif"], TD.tiny > IMG[src$="/yellow.gif"], TD.tiny > IMG[src$="/black.gif"]	{WIDTH: 24px; HEIGHT: 24px; MARGIN: 2px 2px; VERTICAL-ALIGN: middle}
+.tf-run-statusline IMG	{WIDTH: 10px; HEIGHT: 10px}
+/* person icons (beside user names, user level in the admin user list): 24px like the other icons, a little gap before the name */
+IMG[src$="/user.gif"], IMG[src$="/user_offline.gif"], IMG[src$="/admin_user.gif"], IMG[src$="/superadmin.gif"], IMG[src$="/user_group.gif"]	{WIDTH: 24px; HEIGHT: 24px; MARGIN: 2px 6px 2px 2px; VERTICAL-ALIGN: middle}
+/* Directory list (dir.php) folder and file icons beside the names: the same 24px, a little gap before the name */
+A[href^="dir.php?dir="] > IMG[src$="/folder2.gif"], A > IMG[src$="/up_dir.gif"], TD:first-child > A[href^="dir.php?down="] > IMG,
+TD:first-child > IMG[src*="/images/files/"], TD:first-child > IMG[src$="/time.gif"]	{WIDTH: 24px; HEIGHT: 24px; MARGIN: 2px 8px 2px 0; VERTICAL-ALIGN: middle}
+/* keep a row's action icons on one line (torrent list Admin column and the like) */
+TD:has(> A > IMG[src$="/properties.png"]), TD:has(> DIV > A > IMG[src$="/properties.png"]), TD:has(> A > IMG[src$="/edit.png"]), TD:has(> DIV > A > IMG[src$="/edit.png"])	{WHITE-SPACE: nowrap}
+/* Directory list (dir.php) checkboxes beside them */
+TD[align="right"]:has(> A[href^="dir.php?"], > A[href^="JavaScript:MakeTorrent"], > A[href^="javascript:document.multidir"]) > INPUT[type=checkbox]	{WIDTH: 18px; HEIGHT: 18px; MARGIN: 0 2px 0 6px; VERTICAL-ALIGN: middle}
+
+/* Make Torrent result (maketorrent.php writes it into <label id=output>): a clear success / failure box */
+LABEL#output:has(B.tf-success), LABEL#output:has(B.tf-error)	{DISPLAY: block; MARGIN: 14px auto 6px; MAX-WIDTH: 560px; PADDING: 12px 16px; BORDER: 1px solid; BORDER-LEFT-WIDTH: 5px; BORDER-RADIUS: 6px; TEXT-ALIGN: left; LINE-HEIGHT: 1.6}
+LABEL#output:has(B.tf-success)	{BACKGROUND: rgba(143,174,122,.14); BORDER-COLOR: #a9c793}
+LABEL#output:has(B.tf-error)	{BACKGROUND: rgba(201,122,100,.14); BORDER-COLOR: #d98b74}
+LABEL#output B.tf-success	{COLOR: #a9c793; FONT-SIZE: 18px}
+LABEL#output B.tf-error	{COLOR: #d98b74; FONT-SIZE: 16px}
+
+/* hover popups (overlib) */
+.overCaption	{font-family: Outfit, arial; color: #e8e2d9; font-size: 10pt; font-weight: 400;}
+.overClose	{font-family: Outfit, arial; background: #24211f; color: #c9a46b; font-size: 10pt; font-weight: 400;}
+.overBody	{font-family: Outfit, arial; background: #2a2725; color: #d9d2c7; font-size: 10pt; font-weight: 300;}
+
+/* ---- Run Torrent dialog (rundialog.js on the main page, startpop.php inside it) ---- */
+:root	{--run-bg: #2a2725; --run-card: #1e1c1b; --run-line: #3a3633; --run-text: #e8e2d9; --run-dim: #9a928a; --run-accent: #c9a46b; --run-radius: 6px; --run-error: #c97a64}
+DIALOG.tf-dialog	{PADDING: 0; BORDER: 1px solid var(--run-line); BORDER-RADIUS: var(--run-radius); BACKGROUND: var(--run-bg); WIDTH: min(720px, 94vw); MAX-HEIGHT: none; OVERFLOW: hidden; BOX-SHADOW: 0 18px 50px rgba(0,0,0,.45)}
+DIALOG.tf-dialog::backdrop	{BACKGROUND: rgba(0,0,0,.55)}
+DIALOG.tf-dialog IFRAME	{DISPLAY: block; WIDTH: 100%; HEIGHT: 320px; BORDER: 0}
+BODY.tf-run	{MARGIN: 0; BACKGROUND: var(--run-bg); COLOR: var(--run-text)}
+.tf-run-form	{DISPLAY: flex; FLEX-DIRECTION: column; HEIGHT: 100vh; MARGIN: 0}
+.tf-run-head	{DISPLAY: flex; ALIGN-ITEMS: flex-start; GAP: 12px; PADDING: 16px 20px 14px; BORDER-BOTTOM: 1px solid var(--run-line)}
+.tf-run-kicker	{FONT-SIZE: 11px; FONT-WEIGHT: 600; LETTER-SPACING: .14em; TEXT-TRANSFORM: uppercase; COLOR: var(--run-accent)}
+.tf-run-head H1, .tf-run-pagehead H1	{MARGIN: 3px 0 0; LINE-HEIGHT: 1.25; COLOR: var(--run-text); OVERFLOW-WRAP: anywhere; FONT-FAMILY: Outfit, "Helvetica Neue", Arial, sans-serif; FONT-WEIGHT: 300; FONT-SIZE: 18px; LETTER-SPACING: .5px}
+BUTTON.tf-run-x	{MARGIN-LEFT: auto; FLEX: none; BACKGROUND: none; BOX-SHADOW: none; BORDER: 0; COLOR: var(--run-dim); FONT-SIZE: 18px; LINE-HEIGHT: 1; PADDING: 4px 6px; CURSOR: pointer}
+BUTTON.tf-run-x:hover	{BACKGROUND: none; COLOR: var(--run-text)}
+.tf-run-body	{FLEX: 1; OVERFLOW-Y: auto; PADDING: 16px 20px 20px; SCROLLBAR-WIDTH: thin; SCROLLBAR-COLOR: var(--run-line) transparent}
+.tf-run-grid	{DISPLAY: grid; GRID-TEMPLATE-COLUMNS: repeat(auto-fit, minmax(140px, 1fr)); GAP: 14px 16px}
+.tf-run-field > LABEL	{DISPLAY: block; MARGIN-BOTTOM: 5px; FONT-SIZE: 12px; COLOR: var(--run-dim)}
+.tf-run-input	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 6px; FONT-SIZE: 12px; COLOR: var(--run-dim)}
+.tf-run-input INPUT, .tf-run-field SELECT	{WIDTH: 100%; MIN-WIDTH: 0; BOX-SIZING: border-box}
+.tf-run-hint	{MARGIN-TOP: 4px; FONT-SIZE: 11px; COLOR: var(--run-dim)}
+.tf-run-check	{GRID-COLUMN: 1 / -1; DISPLAY: flex; ALIGN-ITEMS: center; GAP: 8px; CURSOR: pointer}
+.tf-run INPUT[type=checkbox]	{WIDTH: 16px; HEIGHT: 16px; MARGIN: 0; PADDING: 0; FLEX: none; ACCENT-COLOR: var(--run-accent); CURSOR: pointer}
+.tf-run-section	{MARGIN-TOP: 20px}
+.tf-run-section H2	{MARGIN: 0 0 8px; FONT-SIZE: 11px; FONT-WEIGHT: 600; LETTER-SPACING: .14em; TEXT-TRANSFORM: uppercase; COLOR: var(--run-dim)}
+.tf-run-card	{BACKGROUND: var(--run-card); BORDER: 1px solid var(--run-line); BORDER-RADIUS: var(--run-radius)}
+DL.tf-run-meta	{DISPLAY: grid; GRID-TEMPLATE-COLUMNS: max-content 1fr; GAP: 7px 18px; MARGIN: 0; PADDING: 12px 14px}
+DL.tf-run-meta DT	{COLOR: var(--run-dim); WHITE-SPACE: nowrap}
+DL.tf-run-meta DD	{MARGIN: 0; MIN-WIDTH: 0; OVERFLOW-WRAP: anywhere}
+.tf-run-dim	{COLOR: var(--run-dim)}
+.tf-run-files-head	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 10px; PADDING: 9px 14px; BORDER-BOTTOM: 1px solid var(--run-line); FONT-SIZE: 12px; COLOR: var(--run-dim); CURSOR: pointer}
+.tf-run-file	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 10px; PADDING: 8px 14px; BORDER-TOP: 1px solid var(--run-line); CURSOR: pointer}
+.tf-run-files > .tf-run-file:first-child, .tf-run-files-head ~ INPUT + .tf-run-file	{BORDER-TOP: 0}
+.tf-run-file:hover	{BACKGROUND: color-mix(in srgb, var(--run-accent) 8%, transparent)}
+.tf-run-file IMG	{FLEX: none}
+.tf-run-name	{FLEX: 1; MIN-WIDTH: 0; OVERFLOW-WRAP: anywhere}
+.tf-run-size	{FLEX: none; WHITE-SPACE: nowrap; FONT-SIZE: 12px; COLOR: var(--run-dim); FONT-VARIANT-NUMERIC: tabular-nums}
+.tf-run-file.off .tf-run-name, .tf-run-file.off IMG	{OPACITY: .45}
+.tf-run-foot	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 10px; PADDING: 12px 20px; BORDER-TOP: 1px solid var(--run-line); BACKGROUND: var(--run-bg)}
+.tf-run-summary	{MARGIN-RIGHT: auto; FONT-SIZE: 12px; COLOR: var(--run-dim)}
+INPUT[type=button].tf-run-secondary	{BACKGROUND: transparent; COLOR: var(--run-text); BOX-SHADOW: inset 0 0 0 1px var(--run-line)}
+INPUT[type=button].tf-run-secondary:hover	{BACKGROUND: var(--run-card)}
+.tf-run-progress	{FLEX: none; WIDTH: 60px; HEIGHT: 4px; OVERFLOW: hidden; BORDER-RADIUS: 2px; BACKGROUND: var(--run-line)}
+.tf-run-progress SPAN	{DISPLAY: block; HEIGHT: 100%; BACKGROUND: var(--run-accent)}
+/* Torrent Details page (details.php) */
+.tf-run-page	{MAX-WIDTH: 900px; MARGIN: 0 auto; PADDING: 4px 4px 14px; TEXT-ALIGN: left; COLOR: var(--run-text)}
+.tf-run-pagehead	{PADDING-BOTTOM: 14px; BORDER-BOTTOM: 1px solid var(--run-line)}
+.tf-run-status	{MARGIN-TOP: 6px; FONT-SIZE: 12px; COLOR: var(--run-dim)}
+.tf-run-notice	{MARGIN-TOP: 14px; PADDING: 10px 14px; BORDER-LEFT: 4px solid var(--run-accent); BORDER-RADIUS: var(--run-radius); BACKGROUND: var(--run-card)}
+.tf-run-notice-error	{BORDER-LEFT-COLOR: var(--run-error)}
+.tf-run-notice.tf-run-notice-ok, #tf-up-msg.tf-run-notice-ok	{BORDER-LEFT-COLOR: var(--run-ok); BACKGROUND: color-mix(in srgb, var(--run-ok) 28%, transparent)}
+.tf-run-notice-ok B	{COLOR: var(--run-ok)}
+.tf-run-actions	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 10px; MARGIN-TOP: 14px}
+/* Download Details (downloaddetails.php, in the narrow dialog) */
+DIALOG.tf-dialog.tf-dialog-narrow	{WIDTH: min(480px, 94vw)}
+.tf-run-statusline	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 8px; FLEX-WRAP: wrap}
+.tf-run-statusline B	{FONT-WEIGHT: 600}
+.tf-run-eta	{MARGIN-LEFT: auto}
+.tf-run-bar	{HEIGHT: 8px; MARGIN: 10px 0 16px; OVERFLOW: hidden; BORDER-RADIUS: 4px; BACKGROUND: var(--run-line)}
+.tf-run-bar SPAN	{DISPLAY: block; HEIGHT: 100%; BACKGROUND: var(--run-accent)}
+.tf-run-stats	{DISPLAY: grid; GRID-TEMPLATE-COLUMNS: 1fr 1fr; GAP: 1px; OVERFLOW: hidden; BACKGROUND: var(--run-line)}
+.tf-run-stats > DIV	{PADDING: 10px 14px; BACKGROUND: var(--run-card)}
+.tf-run-stats SPAN	{DISPLAY: block; MARGIN-BOTTOM: 3px; FONT-SIZE: 11px; LETTER-SPACING: .08em; TEXT-TRANSFORM: uppercase; COLOR: var(--run-dim)}
+.tf-run-stats B	{FONT-SIZE: 16px; FONT-WEIGHT: 500; COLOR: var(--run-text); FONT-VARIANT-NUMERIC: tabular-nums}
+.tf-run-notice UL	{MARGIN: 6px 0 0; PADDING-LEFT: 18px}
+.tf-run-owner	{MARGIN-TOP: 12px}
+/* Make Torrent (maketorrent.php) */
+.tf-run-grid.tf-run-grid-form	{GRID-TEMPLATE-COLUMNS: 1fr 1fr}
+.tf-run-wide	{GRID-COLUMN: 1 / -1}
+.tf-run-field > INPUT[type=text], .tf-run-field > TEXTAREA	{WIDTH: 100%; BOX-SIZING: border-box}
+.tf-run-field > TEXTAREA	{MIN-HEIGHT: 60px; RESIZE: vertical; FONT-FAMILY: inherit}
+.tf-run-body > #status:empty	{DISPLAY: none}
+.tf-run-body > #status.tf-run-notice	{MARGIN: 0 0 16px}
+LABEL.tf-run-check-inline	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 8px; CURSOR: pointer}
+.tf-run-field > .tf-run-invalid	{BORDER-COLOR: var(--run-error); OUTLINE: 2px solid color-mix(in srgb, var(--run-error) 30%, transparent)}
+/* File upload box on the Directory list (dir.php, upload.js) */
+.tf-up	{MARGIN: 0 auto 12px; PADDING: 12px 14px; TEXT-ALIGN: left; COLOR: var(--run-text); BACKGROUND: var(--run-card); BORDER: 1px dashed var(--run-line); BORDER-RADIUS: var(--run-radius)}
+.tf-up.tf-up-drop	{BORDER-COLOR: var(--run-accent); BACKGROUND: color-mix(in srgb, var(--run-accent) 10%, var(--run-card))}
+.tf-up-row	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 10px; FLEX-WRAP: wrap}
+.tf-up-title	{MARGIN-RIGHT: 4px}
+LABEL.tf-up-pick	{DISPLAY: inline-block; PADDING: 6px 14px; BORDER-RADIUS: var(--run-radius); BOX-SHADOW: inset 0 0 0 1px var(--run-line); COLOR: var(--run-text); CURSOR: pointer}
+LABEL.tf-up-pick:hover	{BACKGROUND: var(--run-bg)}
+LABEL.tf-up-pick INPUT	{DISPLAY: none}
+#tf-up-chosen	{FLEX: 1; MIN-WIDTH: 120px; FONT-SIZE: 12px; OVERFLOW-WRAP: anywhere}
+#tf-up-progress	{MARGIN-TOP: 12px}
+#tf-up-progress[hidden]	{DISPLAY: none}
+.tf-up-line	{DISPLAY: flex; FLEX-WRAP: wrap; JUSTIFY-CONTENT: space-between; GAP: 10px; MARGIN-BOTTOM: 6px; FONT-SIZE: 12px}
+.tf-up-barrow	{DISPLAY: flex; ALIGN-ITEMS: center; GAP: 10px}
+.tf-up-barrow .tf-run-bar	{FLEX: 1; MARGIN: 0}
+#tf-up-msg.tf-run-notice	{MARGIN-TOP: 12px; BACKGROUND: var(--run-bg)}
+/* Server Stats (who.php) */
+.tf-run-stats.tf-run-stats-3	{GRID-TEMPLATE-COLUMNS: repeat(3, 1fr)}
+@media (max-width: 640px) {.tf-run-stats.tf-run-stats-3 {GRID-TEMPLATE-COLUMNS: 1fr 1fr}}
+.tf-run-stats B SMALL	{FONT-SIZE: 12px; FONT-WEIGHT: normal; COLOR: var(--run-dim)}
+.tf-run-bar.tf-run-bar-small	{HEIGHT: 4px; MARGIN: 8px 0 0; BORDER-RADIUS: 2px}
+TABLE.tf-run-table	{WIDTH: 100%; BORDER-COLLAPSE: collapse}
+TABLE.tf-run-table TH	{PADDING: 9px 14px; TEXT-ALIGN: left; FONT-SIZE: 11px; FONT-WEIGHT: 600; LETTER-SPACING: .08em; TEXT-TRANSFORM: uppercase; COLOR: var(--run-dim); BORDER-BOTTOM: 1px solid var(--run-line)}
+TABLE.tf-run-table TD	{PADDING: 8px 14px; COLOR: var(--run-text); BORDER-TOP: 1px solid var(--run-line); FONT-VARIANT-NUMERIC: tabular-nums}
+TABLE.tf-run-table TR:nth-child(2) TD	{BORDER-TOP: 0}
+:root	{--run-ok: #8fae7a}

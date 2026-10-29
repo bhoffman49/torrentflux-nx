@@ -1,0 +1,40 @@
+TorrentFlux NX
+Copyright (C) 2026 the TorrentFlux NX contributors
+
+TorrentFlux NX is free software; you can redistribute it and/or modify it under the
+terms of the GNU General Public License version 2, or (at your option) any later
+version. See COPYING. It comes with NO WARRANTY; see COPYING sections 11-12 and
+DISCLAIMER.md.
+
+TorrentFlux NX is a modified version of TorrentFlux 2.4
+  Copyright (C) 2004-2008 Qrome and the TorrentFlux contributors (www.torrentflux.com)
+  GNU General Public License v2 or later. The original copyright headers are kept in
+  the source files, and the original change history is in CHANGELOG-2.4.txt.
+  PHP 8 / SQLite port by ClaudeClaw; Transmission engine, themes, installers and the
+  other changes listed in CHANGELOG.md by the TorrentFlux NX contributors.
+
+Bundled third-party components
+------------------------------
+
+ADOdb 4.80 (html/adodb/) - database abstraction layer
+  Copyright (c) 2000-2006 John Lim. Dual-licensed BSD / LGPL; see html/adodb/license.txt.
+  Only the core files and the SQLite driver are included.
+
+dTree 2.05 (html/dtree.js) - JavaScript tree menu
+  Copyright (c) 2002-2003 Geir Landrö. Free to use with the copyright notice kept.
+
+overLIB (html/overlib.js) - JavaScript tooltips
+  Copyright Erik Bosrup. Free to use under the overLIB license (see the file header).
+
+wz_tooltip 3.31 (html/tooltip.js) - JavaScript tooltips
+  Copyright Walter Zorn (www.walterzorn.com). GNU LGPL; the notice in the file is kept.
+
+Material Icons (html/themes/*/images/) - icons in every theme
+  Copyright Google LLC. Apache License, Version 2.0:
+  https://www.apache.org/licenses/LICENSE-2.0
+  Recoloured and rendered to PNG by the scripts in docs/theme-tools/.
+
+Fonts (not bundled) - the clay, mint, network, walnut and workshop themes load
+  Barlow, Barlow Condensed, Inter, Manrope, Newsreader, Outfit and Roboto from
+  Google Fonts at page view. All are under the SIL Open Font License 1.1 (Roboto:
+  Apache License 2.0).

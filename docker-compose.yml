@@ -1,0 +1,19 @@
+# TorrentFlux NX
+#   docker compose up -d --build
+# then open http://<server>:8080/ and the installer starts.
+# Keep the installer's peer port at 51413 (or change it here as well).
+services:
+  torrentflux:
+    build: .
+    image: torrentflux-nx:1.0.0
+    container_name: torrentflux-nx
+    restart: unless-stopped
+    environment:
+      TZ: UTC                     # your time zone, e.g. America/Los_Angeles
+    ports:
+      - "8080:80"                 # web page; put it behind HTTPS before exposing it
+      - "51413:51413/tcp"         # BitTorrent peers - open in your firewall/router
+      - "51413:51413/udp"
+    volumes:
+      - ./state:/var/www/torrentflux/state   # settings, install lock, database - back this up
+      - ./data:/var/www/torrentflux/data     # downloads

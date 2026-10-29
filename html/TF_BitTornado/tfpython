@@ -1,0 +1,11 @@
+#!/bin/sh
+# TorrentFlux calls "<pythonCmd> -OO <script> ..."; there is no Python here.
+# btphptornado.php runs as-is. The old BitTornado .py helpers (btmakemetafile, btshowmetainfo,
+# tfQManager) run their PHP replacements next to them; the .py path is passed along as the
+# first argument so it stays on the command line, where TorrentFlux's process checks look for it.
+PHP=$(command -v php || echo /usr/local/bin/php)
+[ "$1" = "-OO" ] && shift
+case "$1" in
+  *.py) [ -f "${1%.py}.php" ] && exec "$PHP" "${1%.py}.php" "$@" ;;
+esac
+exec "$PHP" "$@"
