@@ -1,3 +1,5 @@
+<img src="docs/logo.png" alt="TorrentFlux NX logo" width="96" align="right">
+
 # TorrentFlux NX
 
 **A self-hosted, web-based BitTorrent client for your own Linux server**, a modern rebuild of the classic
